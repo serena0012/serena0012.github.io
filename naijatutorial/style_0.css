@@ -156,34 +156,104 @@ button[type="submit"] .uil.uil-search-alt {
 
 }
 
-#featured-tutors {
-    display: flex;
-    justify-content: space-between;
+/*Features*/
+.features-title {
+    margin-top: 14rem;
+    margin-left: 1rem;
 }
 
-.tutor-card {
-    flex: 0 0 calc(27% - 10px);
-    /* Adjust the width as needed */
-    width: 300px;
+#features {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #3f9406;
+}
+
+#features2 {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #3f9406;
+}
+
+#features3 {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #3f9406;
+}
+
+.footer {
+    margin: 10px;
     padding: 10px;
-    padding-top: 25rem;
-    margin: 50px;
-    border-radius: 5px;
+    border: 2px solid #ccf3b2;
+    background-color: #e0f7d1;
+}
+
+.footer-head {
+    font-size: 2rem;
     text-align: center;
 }
 
-.tutor-card img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 5rem;
+.footer-text {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.tutor-card img,
-.tutor-card h3,
-.tutor-card p {
-    margin-top: -1rem;
+.footer,
+p {
+    font-size: 20px;
+    text-align: justify;
 }
 
-/*login css*/
+
+
+.contact,
+p,
+ul li{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Styling for the icons */
+i.uil.uil-linkedin-alt {
+    /* Add desired font size, color, and other styles */
+    font-size: 30px;
+    color: #0e76a8;
+    /* Additional styles such as margin, padding, etc. */
+    /* For example: */
+    margin-right: 10px;
+}
+
+i.uil.uil-linkedin-alt:hover {
+    color: #6bf013
+}
+
+
+
+
+ion-icon[name="logo-twitter"] {
+    /* Add desired font size, color, and other styles */
+    font-size: 30px;
+    color: #1da1f2;
+    /* Additional styles such as margin, padding, etc. */
+    /* For example: */
+    margin-right: 10px;
+}
+
+ion-icon[name="logo-twitter"]:hover {
+    color: #6bf013
+}
+
+i.uil.uil-github {
+    /* Add desired font size, color, and other styles */
+    font-size: 30px;
+    color: #05193d;
+    /* Additional styles such as margin, padding, etc. */
+    /* For example: */
+    margin-right: 10px;
+}
+
+i.uil.uil-github:hover {
+    color: #6bf013
+}
+
+
