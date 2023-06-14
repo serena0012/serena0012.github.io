@@ -1,188 +1,120 @@
-/* CSS code for making the website mobile-friendly */
+/* Default styles */
 
-/* General styles */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header styles */
+/* Header */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    z-index: 100;
-}
-
-.logo {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3f9406;
-}
-
-nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 5%;
-}
-
-#menu {
-    list-style-type: none;
-    margin: -25px;
-    padding: 0;
-    display: flex;
-}
-
-#menu li a {
-    text-decoration: none;
-    color: #3f9406;
-    padding: 0px 20px;
-}
-
-/* Homepage styles */
-#homepage {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#homepage h1 {
-    font-size: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #a51414;
-    text-align: left;
-}
-
-#homepage p {
-    color: #a51414;
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* Features styles */
-.features-title {
-    margin-top: 5rem;
-    margin-left: 1rem;
-}
-
-#features,
-#features2,
-#features3 {
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid #3f9406;
-}
-
-/* Footer styles */
-.footer {
-    margin: 10px;
     padding: 10px;
-    border: 2px solid #ccf3b2;
-    background-color: #e0f7d1;
-}
-
-.footer-head {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.footer-text {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.footer,
-p {
-    font-size: 20px;
-    text-align: justify;
-}
-
-/* Contact styles */
-.contact,
-p,
-ul li {
-    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    display: flex;
     list-style: none;
-    text-decoration: none;
-}
-
-/* Social media icon styles */
-i.uil.uil-linkedin-alt {
-    font-size: 30px;
-    color: #0e76a8;
+  }
+  
+  nav ul li {
     margin-right: 10px;
-}
-
-i.uil.uil-linkedin-alt:hover {
-    color: #6bf013;
-}
-
-ion-icon[name="logo-twitter"] {
-    font-size: 30px;
-    color: #1da1f2;
+  }
+  
+  /* Homepage content */
+  .image {
+    position: relative;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .centered-search {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  /* Features section */
+  .features-title {
+    padding: 20px;
+  }
+  
+  #features,
+  #features2,
+  #features3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #features img,
+  #features2 img,
+  #features3 img {
+    width: 100px;
     margin-right: 10px;
-}
-
-ion-icon[name="logo-twitter"]:hover {
-    color: #6bf013;
-}
-
-i.uil.uil-github {
-    font-size: 30px;
-    color: #05193d;
-    margin-right: 10px;
-}
-
-i.uil.uil-github:hover {
-    color: #6bf013;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .logo {
-        font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Small screens */
+  @media (max-width: 767px) {
+    /* Header */
+    .header {
+      flex-direction: column;
+      align-items: center;
     }
-
-    #menu li a {
-        padding: 0px 10px;
+  
+    nav {
+      margin-top: 10px;
     }
-
-    #homepage h1 {
-        font-size: 2.5rem;
+  
+    /* Homepage content */
+    .text {
+      font-size: 18px;
     }
-
-    #homepage p {
-        font-size: 1.8rem;
+  
+    /* Features section */
+    #features,
+    #features2,
+    #features3 {
+      flex-direction: column;
     }
-
-    .features-title {
-        margin-top: 3rem;
+  
+    #features img,
+    #features2 img,
+    #features3 img {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
-
-    .footer-head {
-        font-size: 1.8rem;
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Homepage content */
+    .text {
+      font-size: 24px;
     }
-
-    .footer-text {
-        font-size: 1.3rem;
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    /* Homepage content */
+    .text {
+      font-size: 32px;
     }
-
-    i.uil.uil-linkedin-alt,
-    ion-icon[name="logo-twitter"],
-    i.uil.uil-github {
-        font-size: 25px;
-    }
-}
+  }
+  
