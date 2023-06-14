@@ -262,30 +262,44 @@ i.uil.uil-github:hover {
 
 /* ... */
 
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #f5f5f5;
-  }
-  
-  .footer-head {
-    margin-bottom: 10px;
-  }
-  
-  .footer-text {
-    margin-bottom: 20px;
-  }
-  
-  .footer p {
-    margin-bottom: 10px;
-  }
-  
-  .contact {
-    margin-top: 20px;
-  }
+
   
   /* Media queries for responsiveness */
+  /* Default styles */
+
+/* ... */
+
+/* Homepage content */
+
+
+/* Media queries for responsiveness */
+
+/* Small screens (iPhone 7 and similar devices) */
+@media (max-width: 375px) {
+  /* Homepage content */
+  #homepage {
+    margin-top: 20px;
+  }
+
+  #homepage h1 {
+    font-size: 2rem;
+  }
+
+  #homepage p {
+    font-size: 1rem;
+  }
+
+  #search-form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #search-form button {
+    width: 100%;
+  }
+}
+
   
   /* Small screens (iPhone 7 and similar devices) */
   @media (max-width: 375px) {
