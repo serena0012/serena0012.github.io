@@ -70,8 +70,8 @@
   
   /* Media queries for responsiveness */
   
-  /* Small screens */
-  @media (max-width: 767px) {
+  /* Small screens (iPhone 7 and similar devices) */
+  @media (max-width: 375px) {
     /* Header */
     .header {
       flex-direction: column;
@@ -82,9 +82,17 @@
       margin-top: 10px;
     }
   
+    nav ul li {
+      margin-right: 5px;
+    }
+  
     /* Homepage content */
     .text {
       font-size: 18px;
+    }
+  
+    .centered-search {
+      bottom: 10px;
     }
   
     /* Features section */
@@ -100,21 +108,19 @@
       margin-right: 0;
       margin-bottom: 10px;
     }
-  }
   
-  /* Medium screens */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    /* Homepage content */
-    .text {
-      font-size: 24px;
+    /* Footer */
+    .footer-text {
+      display: none;
     }
-  }
   
-  /* Large screens */
-  @media (min-width: 1024px) {
-    /* Homepage content */
-    .text {
-      font-size: 32px;
+    .contact-list {
+      padding-left: 0;
+    }
+  
+    .contact-list li {
+      list-style: none;
+      margin-bottom: 5px;
     }
   }
   
