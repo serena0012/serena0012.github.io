@@ -1,125 +1,45 @@
 /* Default styles */
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .logo {
-    font-size: 24px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  /* Homepage content */
-  .image {
-    position: relative;
-  }
-  
-  .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-  }
-  
-  .centered-search {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  
-  /* Features section */
-  .features-title {
+/* ... */
+
+/* Footer */
+.footer {
     padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
   }
   
-  #features,
-  #features2,
-  #features3 {
-    display: flex;
-    align-items: center;
+  .footer-head {
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
     margin-bottom: 20px;
   }
   
-  #features img,
-  #features2 img,
-  #features3 img {
-    width: 100px;
-    margin-right: 10px;
+  .footer p {
+    margin-bottom: 10px;
   }
   
-  /* Footer */
-  .footer {
-    padding: 20px;
+  .contact {
+    margin-top: 20px;
   }
   
   /* Media queries for responsiveness */
   
   /* Small screens (iPhone 7 and similar devices) */
   @media (max-width: 375px) {
-    /* Header */
-    .header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav {
-      margin-top: 10px;
-    }
-  
-    nav ul li {
-      margin-right: 5px;
-    }
-  
-    /* Homepage content */
-    .text {
-      font-size: 18px;
-    }
-  
-    .centered-search {
-      bottom: 10px;
-    }
-  
-    /* Features section */
-    #features,
-    #features2,
-    #features3 {
-      flex-direction: column;
-    }
-  
-    #features img,
-    #features2 img,
-    #features3 img {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
+    /* ... */
   
     /* Footer */
-    .footer-text {
-      display: none;
+    .footer {
+      text-align: center;
+      background-color: #f5f5f5;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   
-    .contact-list {
-      padding-left: 0;
-    }
-  
-    .contact-list li {
-      list-style: none;
+    .footer p {
       margin-bottom: 5px;
     }
   }
